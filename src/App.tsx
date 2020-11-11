@@ -4,15 +4,23 @@ import { Button, Grid,  Toolbar, IconButton, Typography, InputBase, Paper, makeS
 import SearchIcon from '@material-ui/icons/Search';
 import MenuIcon from '@material-ui/icons/Menu';
 
-const useStyles = makeStyles(() => ({
-  paper: {
+const useStyles = makeStyles({
+  footerPaper: {
     width: "25%",
     height: "10em",
     marginLeft: "1px",
-    marginRight: "1px",
-    backgroundColor: "blueviolet"
+    marginRight: "1px"
+  },
+  paperLeft: {
+    backgroundColor: "#3d1bf4"
+  },
+  paperCenter: {
+    backgroundColor: "#794a3a"
+  },
+  paperRight: {
+    backgroundColor: "#78706e"
   }
-}));
+});
 
 function App() {
   const classes = useStyles();
@@ -42,9 +50,9 @@ function App() {
           <Button className="App-center-about" variant="text">About</Button>
         </Grid>
         <Grid className="App-bottom-grid" container direction="row" justify="center">
-          <Paper className={classes.paper} />
-          <Paper className={classes.paper} />
-          <Paper className={classes.paper} />
+          <Paper className={`${classes.footerPaper} ${classes.paperLeft}`} />
+          <Paper className={`${classes.footerPaper} ${classes.paperCenter}`} />
+          <Paper className={`${classes.footerPaper} ${classes.paperRight}`} />
         </Grid>
       </Grid>
     </div>
