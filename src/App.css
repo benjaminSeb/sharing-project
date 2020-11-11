@@ -29,14 +29,6 @@
   transform: rotate(-90deg);
 }
 
-.bottom-paper {
-  margin-left: 1px;
-  margin-right: 1px;
-  width: 25%;
-  height: 10em;
-  background: blueviolet;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

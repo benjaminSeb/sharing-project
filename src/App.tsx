@@ -1,17 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import LongMenu from './Menu';
-import { Button, Grid, Icon, TextField, AppBar, Toolbar, IconButton, Typography, InputBase, Paper, makeStyles } from '@material-ui/core';
-import ChildCareIcon from '@material-ui/icons/ChildCare';
+import { Button, Grid,  Toolbar, IconButton, Typography, InputBase, Paper, makeStyles } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import MenuIcon from '@material-ui/icons/Menu';
-import classes from '*.module.css';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   paper: {
-    width: theme.spacing(16),
-    height: theme.spacing(16),
+    width: "25%",
+    height: "10em",
+    marginLeft: "1px",
+    marginRight: "1px",
     backgroundColor: "blueviolet"
   }
 }));
@@ -23,7 +21,6 @@ function App() {
     <div className="App">
       <Grid className="App-grid" container direction="column" alignItems="center" justify="space-between">
         <Grid className="App-header-grid" container direction="row" justify="center">
-          {/* <AppBar position="static"> */}
             <Toolbar>
               <IconButton edge="start" className="Toolbar-menu-button" color="primary" aria-label="menu">
                 <MenuIcon />
@@ -46,8 +43,8 @@ function App() {
         </Grid>
         <Grid className="App-bottom-grid" container direction="row" justify="center">
           <Paper className={classes.paper} />
-          <Paper className="bottom-paper" />
-          <Paper className="bottom-paper" />
+          <Paper className={classes.paper} />
+          <Paper className={classes.paper} />
         </Grid>
       </Grid>
     </div>
